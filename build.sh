@@ -1,5 +1,5 @@
 #!/bin/bash
-version=v1.0.0
+version=v1.0.2
 image_name=whp98/caddy-with-plugins
 docker rmi $image_name:$version
 docker build --no-cache -t $image_name:$version --network host .\
